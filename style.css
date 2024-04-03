@@ -20,24 +20,38 @@ body {
   height: 37.5rem;
   border-radius: 1rem;
   overflow: hidden;
+  min-width: 40%;
 }
 
 .display-container{
   display: flex;
+  justify-content: center;
+  background-color: rgb(67, 67, 101);
+  padding-bottom: 10px;
+}
+
+.display-container .container{
+  display: flex;
   justify-content: flex-end;
   align-items: flex-end;
   background-color: rgb(67, 67, 101);
-  width: 100%;
+  color: #fff;
+  width: 80%;
   height: 10rem;
-  padding-bottom: 1rem;
-  padding-right: 2rem;
   font-size: 2rem;
 }
 
-.buttons-container{
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(52, 52, 71);
+}
+
+.buttons-container .container{
   background-color: rgb(52, 52, 71);
   height: 27.5rem;
-
+  width: 80%;
+  margin: 0 auto;
 }
 
 .buttons-container button {
@@ -45,4 +59,15 @@ body {
   color: #fff;
   border: none;
   border-radius: 0.2rem;
+  width: 70px;
+  height: 70px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.buttons-container .clear-btn{
+  display: block;
+  width: 100%;
+  margin-top: 1rem;
 }
