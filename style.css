@@ -16,11 +16,10 @@ body {
 .calculator-container{
   margin-top: 2rem;
   background-color: #fff;
-  width: 40%;
+  width: 30%;
   height: 37.5rem;
   border-radius: 1rem;
   overflow: hidden;
-  min-width: 40%;
 }
 
 .display-container{
@@ -45,6 +44,7 @@ body {
   display: flex;
   justify-content: center;
   background-color: rgb(52, 52, 71);
+  overflow-y: scroll;
 }
 
 .buttons-container .container{

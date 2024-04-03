@@ -37,6 +37,12 @@ function operate(firstNumb, operator, secondNumb){
   }
 }
 
+function displayNumber(value){
+  displayEl.innerHTML += value;
+}
+
 let firstNumber;
 let operator;
 let secondNumber;
+
+const displayEl = document.querySelector('.numbers');

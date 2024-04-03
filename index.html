@@ -15,7 +15,9 @@
   <body>
     <main class="calculator-container">
       <section class="display-container">
-        <div class="container">23 + 42</div>
+        <div class="container">
+          <div class="numbers">23</div>
+        </div>
       </section>
       <section class="buttons-container">
         <div class="container">
@@ -23,25 +25,25 @@
             <button class="clear-btn">C</button>
           </div>
           <div class="rest-btns">
-            <button class="7">7</button>
-            <button class="8">8</button>
-            <button class="9">9</button>
+            <button onclick="displayNumber(7)" class="7 number">7</button>
+            <button onclick="displayNumber(8)" class="8 number">8</button>
+            <button onclick="displayNumber(9)" class="9 number">9</button>
             <button class="mult-btn">X</button>
   
-            <button class="4">4</button>
-            <button class="5">5</button>
-            <button class="6">6</button>
+            <button onclick="displayNumber(4)" class="4 number">4</button>
+            <button onclick="displayNumber(5)" class="5 number">5</button>
+            <button onclick="displayNumber(6)" class="6 number">6</button>
             <button class="-">-</button>
   
-            <button class="1">1</button>
-            <button class="2">2</button>
-            <button class="3">3</button>
+            <button onclick="displayNumber(1)" class="1 number">1</button>
+            <button onclick="displayNumber(2)" class="2 number">2</button>
+            <button onclick="displayNumber(3)" class="3 number">3</button>
             <button class="+">+</button>
   
-            <button class="0">0</button>
+            <button onclick="displayNumber(0)" class="0 number">0</button>
             <button class="dot-btn">.</button>
             <button class="backspace"><=</button>
-            <button class="equals">=</button>
+            <button onclick="operate()" class="equals">=</button>
           </div>
           
         </div>
