@@ -14,31 +14,36 @@ function divide(first, second){
   return first / second;
 }
 
+function displayNumber(value){
+  displayEl.innerHTML += value;
+  
+}
+
+function clearDisplay(){
+  displayEl.innerHTML = '';
+}
+
 function operate(firstNumb, operator, secondNumb){
   switch (operator) {
     case '+':
-      add(firstNumb, secondNumb);
+      return add(firstNumb, secondNumb);
       break;
     
     case '-':
-      subtract(firstNumb, secondNumb);
+      return subtract(firstNumb, secondNumb);
       break;
 
     case '*':
-      multiply(firstNumb, secondNumb);
+      return multiply(firstNumb, secondNumb);
       break;
 
     case '/':
-      divide(firstNumb, secondNumb);
+      return divide(firstNumb, secondNumb);
       break;
 
     default: alert('Invalid operation');
       break;
   }
-}
-
-function displayNumber(value){
-  displayEl.innerHTML += value;
 }
 
 let firstNumber;
